@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple DOM Example</title>
+</head>
+
+<body>
+
+<h2 id="heading">DK Cafe</h2>
+<p id="text">Welcome to our cafe.</p>
+
+<button onclick="changeText()">Change</button>
+
+<script>
+function changeText()
+{
+
+
+    document.getElementById("heading").innerHTML = "DK Cafe Menu";
+
+    document.getElementById("text").innerHTML = "<ul><li>Pizza</li><li>Burger</li><li>Bread omelette</li><li>Sandwitch</li></ul>";
+
+    document.getElementById("heading").style.color = "red";
+
+ 
+    document.getElementById("text").style.fontSize = "20px";
+
+
+}
+</script>
+
+</body>
+</html>
